@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Boot Minimal Demo</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}" />
+</head>
+<body>
+    <header>
+        <h1>Spring Boot API Demo</h1>
+        <p>Minimal UI to test Spring Boot backend.</p>
+    </header>
+
+    <main>
+        <!-- Corrected Cards Container -->
+        <div class="cards-container">
+            <div class="card">
+                <button onclick="fetchData()">Fetch Data</button>
+            </div>
+            <div class="card">
+                <input type="text" id="postInput" placeholder="Enter a message to post.." />
+                <button onclick="postData()">Post Data</button>
+            </div>
+            <div class="card">
+                <button onclick="systemInfo()">Display System Info</button>
+            </div>
+        </div>
+
+        <section class="output">
+            <div class="ide-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+            </div>
+            <h2>API Response:</h2>
+            <pre id="apiResponse">Click a button to interact</pre>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; syrnxalno@2025 Spring Boot Minimal Demo</p>
+    </footer>
+    <script th:src="@{/js/script.js}"></script>
+</body>
+</html>
