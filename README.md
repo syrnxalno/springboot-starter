@@ -11,8 +11,8 @@ This is a **simple Spring Boot application** that follows the **MVC architecture
 
 1. Clone the repository on your local machine and navigate to it:
    ```sh
-   git clone https://github.com/your-username/springboot-demo.git
-   cd springboot-demo
+   git clone https://github.com/syrnxalno/springboot-starter.git
+   cd springboot-starter
    
    ```
    
